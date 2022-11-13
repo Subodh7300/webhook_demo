@@ -12,6 +12,11 @@ def webhook():
             return {"success": False}, 400
     except:
         return {"success": False}, 500
+    
+  
+@app.route('/')
+def index():
+    return "Hello World"
 
 
 if __name__ == "__main__":
